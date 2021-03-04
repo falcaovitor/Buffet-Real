@@ -1,0 +1,77 @@
+.container .banner {
+    width: 100%;
+    margin-top: 2rem;
+}
+.container .banner img{
+    width: 100%;
+    height: 20rem;
+    border-radius: 2rem 0rem 2rem 0rem;
+}
+.container .media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .media img{
+    width: 50rem;
+    height: 32rem;
+}
+.container .media h2{
+    margin-top: 2.2rem;
+    color: white;
+}
+.container .media .video{
+    width: 50rem;
+    height: 25em;
+    border-radius: 2rem;
+}
+.container .media .video-js .vjs-big-play-button{
+    inset: 40% 50% 50% 44%;
+}
+.container .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .text p{
+    width: 70%;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+}
+.container .social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container .social img{
+    width: 30rem;
+    height: 30rem;
+    margin-bottom: 1rem;
+}
+
+@media(max-width: 900px){
+    .container .media img{
+        width: 20rem;
+        height: 30rem;
+    }
+    .container .media h2{
+        font-size: 1.4rem;
+    }
+    .container .media .video{
+        width: 20rem;
+        height: 20rem;
+    }
+    .container .media .video-js .vjs-big-play-button{
+        inset: 40% 50% 50% 35%;
+    }
+    .container .social img{
+        width: 15rem;
+        height: 30rem;
+    }
+    .container .text p{
+        width: 90%;
+    }
+}

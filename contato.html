@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffet Real - Contato</title>
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/contato.css">
+    <link rel="stylesheet" href="./style/flash.css">
+    <script src="https://kit.fontawesome.com/c8fc454d9e.js" crossorigin="anonymous"></script>
+    <script src="./js/pace.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><h1>Buffet Real</h1></a>
+            <span><i class="fas fa-bars"></i></span>
+            <!--desktop-->
+            <div id="modal">
+                <a href="index.html">Página inicial</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="contato.html">Contatos</a>
+            </div>
+            <!--desktop-->
+        </header>
+        <!--mobile-->
+        <div id="modalMobile" class="hide">
+            <div class="header">
+                <h1>Buffet Real</h1>
+                <span><i class="fas fa-times"></i></span>
+            </div>
+            <a href="index.html">Página inicial</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contatos</a>
+        </div>
+        <!--mobile-->
+        <div class="banner">
+            <img src="img/contato.jpg" alt="Contato">
+        </div>
+        <div class="presentationForm">
+            <h2>Fale conosco</h2>
+            <h2>Inscrição para agendar evento</h2>
+        </div>
+        <div class="form">
+            <form action="./php/conn.php" method="post" onsubmit="validate(event)">
+                <div class="form-group">
+                    <div>
+                        <label><b>*</b>Nome:</label>
+                        <input type="text" name="nome" placeholder="Insira seu nome">
+                    </div>
+                    <div>
+                        <label><b>*</b>Idade:</label>
+                        <input type="number" name="idade" placeholder="Insira sua idade">
+                    </div>
+                    <div>
+                        <label><b>*</b>E-mail:</label>
+                        <input type="email" name="email" placeholder="Insira sue E-mail">
+                    </div>
+                    <div>
+                    <label><b>*</b>Celular:</label>
+                        <input type="text" name="celular" placeholder="Insira seu Celular">
+                    </div>
+                    <div>
+                        <label><b>*</b>Q. Pessoas:</label>
+                        <input type="number" name="pessoas" placeholder="Q. de Pessoas">
+                    </div>
+                    <div>
+                        <label><b>*</b>Data:</label>
+                        <input type="date" name="data" placeholder="Insira seu Celular">
+                    </div>
+                    <div>
+                        <label><b>*</b>Tipos de Eventos:</label>
+                        <select id="eventos" name="eventos" >
+                            <option value="">--Selecione--</option>
+                            <option value="casamento">Casamento</option>
+                            <option value="Congressos">Congressos</option>
+                            <option value="Eventos Noturnos">Eventos Noturnos</option>
+                            <option value="Personalizado">Eventos personalizados(Escreva abaixo)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="textArea">
+                    <textarea name="observation" cols="30" rows="10" placeholder="Observação"></textarea>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/mask.js"></script>
+    <script src="./js/validation.js"></script>
+</body>
+</html>

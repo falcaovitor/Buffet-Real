@@ -1,0 +1,112 @@
+.container .banner {
+    width: 100%;
+    margin-top: 2rem;
+}
+.container .banner img{
+    width: 100%;
+    height: 20rem;
+    border-radius: 2rem 0rem 2rem 0rem;
+}
+.container .presentationForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .presentationForm h2{
+    margin-top: 1.2rem;
+    color: white;
+    font-size: 2.2rem;
+}
+.container .form{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .form form .form-group{
+    display: grid;
+    align-self: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.container .form form label{
+    color: white;
+    font-size: 1.4rem;
+}
+.container .form form .form-group input{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 8px 0px 8px 0px;
+    background: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem;
+    outline: none;
+}
+.container .form form .form-group input:focus{
+    border: 2px solid white;
+}
+::-webkit-input-placeholder {
+    color: white;
+    font-size: 1.2rem;
+ }
+ .container .form form .form-group select{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 8px 0px 8px 0px;
+    background: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem;
+}   
+.container .form form .form-group select option{
+    color: black;
+}
+.container .form form .textArea{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .form form .textArea textarea{
+    width: 40rem;
+    border-radius: 8px 0px 8px 0px;
+    background: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem;
+    resize: vertical;
+    outline: none;
+}
+.container .form form .textArea textarea:focus{
+    border: 2px solid white;
+}
+.container .form form .textArea input{
+    margin-top: 2rem;
+    height: 3rem;
+    width: 30rem;
+    border-radius: 8px 0px 8px 0px;
+    font-size: 1.3rem;
+    outline: none;
+    color: white;
+    background: none;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.container .form form .textArea input:hover{
+    background: linear-gradient(to left, white,black);
+    border: 2px solid white;
+}
+@media(max-width: 900px){
+    .container .form form .form-group{
+        grid-template-columns: 1fr;
+    }
+    .container .form form .textArea textarea{
+        width: 20rem;
+    }
+    .container .form form .textArea input{
+        width: 20rem;
+    }
+}
